@@ -2,38 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>centering</title>
     <style>
         #container {
             border: solid;
             height: 300px;
             width 300px;
         }
-        
+
         .item {
             width: 200px;
             height: 200px;
             font-size: 60px;
+            text-align: center;
         }
-        
+
         #one {
             background-color: aqua;
+            z-index: 2;
+            position: relative;
         }
+
         #two {
             background-color: deepskyblue;
             position: relative;
             top: -100px;
             left: 100px;
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
-    
-<!-- #container>#one+#two-->
-<div id="container"> 
-  <div id="one" class='item'>one</div>  
-  <div id="two" class='item'>two</div> 
+
+    <!-- #container>#one+#two-->
+    <div id="container">
+        <div id="one" class='item'>one</div>
+        <div id="two" class='item'>two</div>
     </div>
-</body>
-</html>
+</body></html>
